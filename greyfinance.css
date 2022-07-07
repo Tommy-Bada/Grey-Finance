@@ -3,6 +3,7 @@ html{
 }
 body{
     margin: 0;
+    width: 100%;
 }
 *{
     font-family: Cabin;
@@ -465,7 +466,7 @@ footer>p{
 
     header{
         padding: 2rem 2rem;
-        width: 92%;
+        width: 95%;
         background:rgba(76, 175, 80, 0);
     }
    #desktopnav{
@@ -716,7 +717,7 @@ footer>p{
         border-radius: 5px;
     }
     #phone-image{
-        width:47.3rem;
+        width:90%;
         margin-top: 5rem;
     }
 
