@@ -599,6 +599,7 @@ footer>p{
     }
     .section-3-box-text2{
         font-size: 2rem;
+        width: 80%;
     }
     #section-3>a>button{
         border-radius: 10px;
@@ -632,7 +633,7 @@ footer>p{
     .section-4-box>p{
         font-size: 1.6rem;
         color: var(--text-color);
-        width: 35rem;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
 
