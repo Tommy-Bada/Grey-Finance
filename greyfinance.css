@@ -599,7 +599,7 @@ footer>p{
     }
     .section-3-box-text2{
         font-size: 2rem;
-        width: 80%;
+        width: 60%;
     }
     #section-3>a>button{
         border-radius: 10px;
@@ -640,7 +640,11 @@ footer>p{
     }
 
 
-
+    /*Section 5*/
+    #section-5{
+        width:100%;
+        padding: 1rem 2rem;
+    }
     /*Kenya Section */
     #kenya-section{
         padding: 3rem 2rem;
