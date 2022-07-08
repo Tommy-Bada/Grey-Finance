@@ -507,15 +507,20 @@ footer>p{
     #hamburger-open{
         display: block;
         background-color: white;
-        z-index: 2;
+        z-index: 0;
         height: 100vh;
         width:100%;
         opacity: 0;
+        transition: all 0.6s ease;
     }
     #logo-close-btn{
         padding: 3rem ;
         display: flex;
         justify-content: space-between;
+    }
+    #close-btn>img{
+        height: 2rem;
+        width: 2rem;
     }
     #mobilenav>ul{
         padding-top: 3rem;
