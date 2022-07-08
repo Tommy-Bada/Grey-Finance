@@ -50,6 +50,9 @@ header{
     color: var(--black);
     font-size: 1.6rem;
 }
+#desktopnav>ul>li>a:hover{
+    color:var(--text-color);
+}
 #desktopnav2>ul>li>a{
     text-decoration: none;
     font-size: 1.6rem;
@@ -63,12 +66,23 @@ header{
     border-radius: 5px;
     margin-right: 1rem;
     color: var(--black);
+    transition: all 0.4s ease;
+}
+#login:hover{
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 #signin{
     background-color: var(--signin);
     color: var(--white);
     padding: 1rem 1.6rem;
     border-radius: 5px;
+    transition: all 0.4s ease;
+}
+#signin:hover{
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
 }
 #hamburger-menu{
     display: none;
@@ -123,6 +137,12 @@ main{
     font-size: 1.6rem;
     border-radius: 1rem;
     border: none;
+    transition: all 0.4s ease;
+}
+.get-started:hover{
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
 }
 
 /* Section 2 */
@@ -157,6 +177,10 @@ main{
     border: 0.1rem solid #e6e6e6;
     background-color:var(--section-2-background) ;
     border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.section-2-box-button:hover{
+    padding: 1.2rem 1.4rem;
 }
 .section-2-box-button>b{
     font-size: 1.6rem;
@@ -304,6 +328,10 @@ main{
 .section-6-box{
  max-width: 48rem;
  margin-right: 3rem;
+ transition: all 0.4s ease;
+}
+.section-6-box:hover{
+    margin-top: 2rem;
 }
 .section-6-image{
     width: 48rem;
@@ -360,6 +388,10 @@ main{
     border: 1px solid var(--white);
     border-radius: 5px;
     margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+.store:hover{
+    width: 14rem;
 }
 #phone-image{
     width:47.3rem;
@@ -394,6 +426,12 @@ footer{
     border: none;
     padding: 2rem;
     font-size: 1.6rem;
+    transition: all 0.4s ease;
+}
+#footer-signin:hover{
+    background-color: var(--footer-background);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
 }
 #footer-nav{
     display: flex;
@@ -417,7 +455,11 @@ footer{
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.6rem;
+    transition: all 0.4s ease;
 
+}
+.footer-link>ul>li>a:hover{
+    color:var(--black)
 }
 #contact-link>ul{
     padding-left: 0;
@@ -431,6 +473,10 @@ footer{
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.8rem;
+    transition: all 0.4s ease;
+}
+#contact-link>ul>li>a:hover{
+    color:var(--black);
 }
 #social-nav{
     display: flex;
