@@ -37,6 +37,7 @@ header{
     width: 100%;
     background:rgba(76, 175, 80, 0);
     transition: all 0.4s ease;
+    z-index: 2;
 }
 .header-2{
     display: flex;
@@ -139,6 +140,7 @@ h3{
     background-color: var(--white);
     opacity:0;
     transition: all 0.4s ease;
+    z-index: 3;
 }
 .country{
     display: flex;
@@ -322,35 +324,43 @@ main{
     padding: 10rem 8rem;
     display: none;
 }
-#kenya-section>div{
-    padding: 3rem 0;
-}
 #kenya-section>h3{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .dropdown{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .kenya-section-text1{
     font-size: 2.4rem;
 }
 .dropdown-btn{
-    background-color: var(--black);
-    width:2rem;
-    height:0.4rem;
+    z-index: 1;
+}
+.dropdown-btn:hover{
+    cursor: pointer;
 }
 .kenya-section-text2{
     font-size: 1.8rem;
     color: var(--text-color);
+    z-index: 0;
 }
 #kenya-section-text3{
     font-size: 1.8rem;
     margin-top: 3rem;
 }
-
+#kenya-anm-1, #kenya-anm-2, #kenya-anm-3{
+    padding: 3rem 0;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+.kenya-moved-anm{
+    height:8rem;
+    overflow-y: hidden;
+    transition: all 0.4s ease;
+}
 
 /* Section 6 */
 #section-6{
@@ -798,19 +808,25 @@ footer>p{
         width:100%;
         padding: 11rem 2rem;
     }
-    /*Kenya Section */
+
+    /* Kenya Section */
     #kenya-section{
         padding: 3rem 2rem;
     }
+    .dropdown{
+        margin-bottom: 2rem;
+    }
     .kenya-section-text1{
-        font-size: 2.4rem;
+        width: 80%;
     }
-    .kenya-section-text2{
-        font-size: 1.8rem;
+    #kenya-anm-1, #kenya-anm-2, #kenya-anm-3{
+        padding: 2rem 0;
+        transition: all 0.4s ease;
     }
-    #kenya-section-text3{
-        font-size: 1.8rem;
+    .kenya-moved-anm{
+        height:10rem;
     }
+
 
     /* Section 6 */
     #section-6{

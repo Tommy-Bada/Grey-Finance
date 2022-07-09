@@ -77,3 +77,39 @@ function switchToNigeria(){
 }
 kenyaBtn.addEventListener("click", switchToKenya);
 nigeriaBtn.addEventListener("click", switchToNigeria);
+
+
+
+// Frequently asked question section
+let dropBtn = document.querySelectorAll(".dropdown-btn");
+dropBtn[0].addEventListener("click", function(){
+    if(document.getElementById("kenya-anm-1").classList.contains('kenya-moved-anm')){
+        document.getElementById("kenya-anm-1").classList.remove("kenya-moved-anm");
+        document.getElementsByClassName("dropdown-img")[0].src = "images/Minus.svg";
+    }
+    else{
+        document.getElementById("kenya-anm-1").classList.add("kenya-moved-anm");
+        document.getElementsByClassName("dropdown-img")[0].src = "images/Add.svg";
+    }
+})
+
+dropBtn[1].addEventListener("click", function(){
+    if(document.getElementById("kenya-anm-2").classList.contains('kenya-moved-anm')){
+        document.getElementById("kenya-anm-2").classList.remove("kenya-moved-anm");
+        document.getElementsByClassName("dropdown-img")[1].src = "images/Minus.svg";
+    }
+    else{
+        document.getElementById("kenya-anm-2").classList.add("kenya-moved-anm");
+        document.getElementsByClassName("dropdown-img")[1].src = "images/Add.svg";
+    }
+})
+dropBtn[2].addEventListener("click", function(){
+    if(document.getElementById("kenya-anm-3").classList.contains('kenya-moved-anm')){
+        document.getElementById("kenya-anm-3").classList.remove("kenya-moved-anm");
+        document.getElementsByClassName("dropdown-img")[2].src = "images/Minus.svg";
+    }
+    else{
+        document.getElementById("kenya-anm-3").classList.add("kenya-moved-anm");
+        document.getElementsByClassName("dropdown-img")[2].src = "images/Add.svg";
+    }
+})
