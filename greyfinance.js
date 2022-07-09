@@ -47,14 +47,33 @@ flagBtn.addEventListener('click', dropFlagOption);
 let kenyaBtn = document.getElementById("kenya-btn");
 let nigeriaBtn = document.getElementById("nigeria-btn");
 function switchToKenya(){
-    let mainImage = document.getElementById("main-image");
-    let mainBackground = document.querySelector("main");
-    let secondImage = document.getElementById("section-2-image");
-    mainImage.src = "images/kenya-hero-image.png";
-    mainBackground.style.backgroundImage = 'url("images/kenya-homepage-gradient.svg")';
-    mainBackground.style.backgroundPositionX = 0;
-    mainBackground.style.backgroundPositionY = 0;
-    secondImage.src = "images/Kenya-img.png";
+    document.getElementById("main-image").src = "images/kenya-hero-image.png";
+    document.querySelector("main").style.backgroundImage = 'url("images/kenya-homepage-gradient.svg")';
+    document.querySelector("main").style.backgroundPositionX = 0;
+    document.querySelector("main").style.backgroundPositionY = 0;
+    document.getElementById("section-2-image").src = "images/Kenya-img.png";
     document.getElementById("flagholder").src ="images/KenyaFlag.svg";
+    document.getElementById("main-left").children[0].innerHTML = "Instant foreign bank accounts for Kenyans";
+    document.getElementById("main-left").children[1].innerHTML = "Open a foreign currency account to receive payments from anywhere in the world, make international payments or convert foreign currencies to Kenyan Shillings."
+    document.getElementById("section-4").style.display = "none";
+    document.getElementById("section-5").style.display = "none";
+    document.getElementById("Kenya-section").style.display = "block";
+
+
+}
+function switchToNigeria(){
+    document.getElementById("main-image").src = "images/main-image.png";
+    document.querySelector("main").style.backgroundImage = 'url("images/homepage-gradient.svg")';
+    document.querySelector("main").style.backgroundPositionX = "-80rem";
+    document.querySelector("main").style.backgroundPositionY = "-70rem";
+    document.getElementById("section-2-image").src = "images/woman-on-laptop.jpeg";
+    document.getElementById("flagholder").src ="images/NigeriaFlag.svg";
+    document.getElementById("main-left").children[0].innerHTML = "Foreign accounts for Africans"
+    document.getElementById("main-left").children[1].innerHTML = "Open a global bank account for free to receive and make foreign payments or convert currencies, all in one place"
+    document.getElementById("section-4").style.display = "block";
+    document.getElementById("section-5").style.display = "block";
+    document.getElementById("Kenya-section").style.display = "none";
+
 }
 kenyaBtn.addEventListener("click", switchToKenya);
+nigeriaBtn.addEventListener("click", switchToNigeria);
