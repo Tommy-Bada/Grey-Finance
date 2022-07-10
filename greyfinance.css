@@ -25,6 +25,7 @@ body{
 #hamburger-open{
     position: absolute;
     display: none;
+    z-index: 2;
 }
 
 /*Header*/
@@ -37,7 +38,7 @@ header{
     width: 100%;
     background:rgba(76, 175, 80, 0);
     transition: all 0.4s ease;
-    z-index: 2;
+    z-index: 1;
 }
 .header-2{
     display: flex;
@@ -49,6 +50,7 @@ header{
     background : white;
     box-shadow : rgba(0, 0, 0, 10%) 0px 0px 20px 6px;
     transition: all 0.4s ease;
+    
 }
 #logo>img{
     width: 88px;
@@ -140,7 +142,7 @@ h3{
     background-color: var(--white);
     opacity:0;
     transition: all 0.4s ease;
-    z-index: 3;
+    z-index: 1;
 }
 .country{
     display: flex;
@@ -374,7 +376,7 @@ main{
 }
 #section-6-flex{
     display: flex;
-    overflow-x: auto;
+    overflow-x:auto;
 }
 #section-6-flex::-webkit-scrollbar{
     width: 0;
@@ -836,13 +838,17 @@ footer>p{
         color: var(--text-color);
         font-size: 1.5rem;
     }
+    #section-6-flex{
+        width: 100%;
+        white-space: nowrap;
+    }
     .section-6-box{
     max-width: 100%;
     margin-right: 2rem;
     }
     .section-6-image{
-        width: 48rem;
-        height:27rem;
+        width: 36rem;
+        height:20rem;
     }
     .section-6-image>img{
         width: 100%;
