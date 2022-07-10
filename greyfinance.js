@@ -56,7 +56,6 @@ function switchToKenya(){
     document.getElementById("main-left").children[0].innerHTML = "Instant foreign bank accounts for Kenyans";
     document.getElementById("main-left").children[1].innerHTML = "Open a foreign currency account to receive payments from anywhere in the world, make international payments or convert foreign currencies to Kenyan Shillings."
     document.getElementById("section-4").style.display = "none";
-    document.getElementById("section-5").style.display = "none";
     document.getElementById("Kenya-section").style.display = "block";
     document.getElementById("section-2").firstElementChild.innerHTML = "Get a global account for all your international transactions";
     document.getElementsByClassName("section-2-box-text1")[0].innerHTML = "<b>Get free foreign accounts and get paid by foreign employers & clients</b>"
@@ -80,7 +79,6 @@ function switchToNigeria(){
     document.getElementById("main-left").children[0].innerHTML = "Foreign accounts for Africans"
     document.getElementById("main-left").children[1].innerHTML = "Open a global bank account for free to receive and make foreign payments or convert currencies, all in one place"
     document.getElementById("section-4").style.display = "block";
-    document.getElementById("section-5").style.display = "block";
     document.getElementById("Kenya-section").style.display = "none";
     document.getElementById("section-2").firstElementChild.innerHTML = "Free USD, GBP and EUR accounts for all your international transactions"
     document.getElementsByClassName("section-2-box-text1")[0].innerHTML = "<b>Get paid by foreign employers and clients</b>"
@@ -95,6 +93,7 @@ function switchToNigeria(){
 }
 kenyaBtn.addEventListener("click", switchToKenya);
 nigeriaBtn.addEventListener("click", switchToNigeria);
+
 
 
 
@@ -131,3 +130,25 @@ dropBtn[2].addEventListener("click", function(){
         document.getElementsByClassName("dropdown-img")[2].src = "images/Add.svg";
     }
 })
+
+
+// Animate Section-4 on scroll
+//  function slideUp() {
+//   let slideBoxes = document.getElementsByClassName("section-4-box");
+//       slideBoxes[0].classList.add("animate-section-4-box");
+//       slideBoxes[1].classList.add("animate-section-4-box");
+//       slideBoxes[2].classList.add("animate-section-4-box");
+//       slideBoxes[3].classList.add("animate-section-4-box");
+//       console.log("e dey work")
+//   }
+
+//   let options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.1
+//   }
+  
+//   let observer = new IntersectionObserver(slideUp, options);
+
+//   let target = document.getElementById("section-4-grid");
+// observer.observe(target);

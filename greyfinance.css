@@ -302,6 +302,9 @@ main{
     margin-top: 5rem;
     margin-right: 3rem;
 }
+.animate-section-4-box{
+    animation: textSlideUp 3s 1;
+}
 .section-4-box>h4{
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -311,15 +314,15 @@ main{
     font-size: 1.6rem;
     color: var(--text-color);
 }
+@keyframes textSlideUp{
+    0% {margin-top:10rem;
+        opacity: 0;
+    }
+    100% {margin-top:5rem;
+        opacity: 1;
+    }
+}
 
-/* Section 5 */
-#section-5{
-    text-align: center;
-}
-#section-5>p{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-}
 
 /*Kenya Section */
 #kenya-section{
@@ -548,10 +551,6 @@ footer>p{
     margin-top: 4rem;
     color: var(--text-color);
 }
-
-
-
-
 
 
 
@@ -802,13 +801,6 @@ footer>p{
         margin-left: auto;
         margin-right: auto;
 
-    }
-
-
-    /*Section 5*/
-    #section-5{
-        width:100%;
-        padding: 11rem 2rem;
     }
 
     /* Kenya Section */
