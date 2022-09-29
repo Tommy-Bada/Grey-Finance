@@ -821,28 +821,31 @@ footer>p{
         height:9rem;
     }
 
-/* Section 6 */
-#section-6{
-    padding: 10rem 2rem;
-}
-#section-6-flex{
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-}
-.section-6-box{
- max-width: 36rem;
- margin-right: 2rem;
- transition: all 0.4s ease;
-}
-.section-6-image{
-    width: 24rem;
-    height:13.5rem;
-    
-}
-.section-6-box>h4{
-    margin-top: 1.5rem;
-    font-size: 2rem;
-}
+    /* Section 6 */
+    #section-6{
+        padding: 10rem 2rem;
+    }
+    #section-6-flex{
+        overflow-x: scroll;
+        width: 100%;
+
+    }
+    #section-6-flex::-webkit-scrollbar {
+        display: none;
+      }
+    .section-6-box{
+        width: 24rem;
+        margin-right: 2rem;
+    }
+    .section-6-image{
+        width: 24rem;
+        height:13.5rem;
+        
+    }
+    .section-6-box>h4{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
     /* Section 7 */
     #section-7{
         display: block;
